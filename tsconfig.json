@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [
+      "dom"
+    ],
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2017",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./dist/out-tsc",
+    "typeRoots": [ "./node_modules/@types", "./src/types"],
+    "types": ["lodash"],
+    "baseUrl": ".",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+    "include": [
+      "src/**/*",
+      "src/types/*.d.ts"
+    ]
+}
